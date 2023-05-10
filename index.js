@@ -9,6 +9,18 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/produtos", (req, res)=>{
+    res.json([
+        {
+            nome:"TV"
+
+        },
+        {
+            nome:"SOFA"
+        }
+    ])
+})
+
 const PORT = 3000;
 
 app.listen(process.env.PORT || PORT,  ()=>{
